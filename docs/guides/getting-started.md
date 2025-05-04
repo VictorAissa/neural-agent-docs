@@ -10,9 +10,9 @@ Ce guide vous aidera à démarrer avec NeuralAgent™, le framework d'agents aut
 
 Avant de commencer, assurez-vous d'avoir installé :
 
-- Python 3.9 ou supérieur
-- pip (gestionnaire de paquets Python)
-- Un environnement virtuel (recommandé)
+-   Python 3.9 ou supérieur
+-   pip (gestionnaire de paquets Python)
+-   Un environnement virtuel (recommandé)
 
 ## Installation
 
@@ -34,25 +34,25 @@ Après l'installation, vous devez configurer votre environnement NeuralAgent™.
 
 ```yaml
 # Configuration NeuralAgent
-api_key: "votre_clé_api"  # Optionnel si vous utilisez l'API hébergée
-log_level: "info"
+api_key: 'votre_clé_api' # Optionnel si vous utilisez l'API hébergée
+log_level: 'info'
 
 # Configuration des modèles
 models:
-  default: "neural-agent-v2"
-  fallback: "neural-agent-v1"
+    default: 'neural-agent-v2'
+    fallback: 'neural-agent-v1'
 
 # Configuration de la mémoire
 memory:
-  type: "local"  # Options: local, redis, postgres
-  capacity: 1000
+    type: 'local' # Options: local, redis, postgres
+    capacity: 1000
 
 # Configuration des outils
 tools:
-  enabled:
-    - search
-    - calculator
-    - document_processor
+    enabled:
+        - search
+        - calculator
+        - document_processor
 ```
 
 ## Votre premier agent
@@ -189,13 +189,12 @@ result = agent.execute(task)
 
 Maintenant que vous avez créé votre premier agent, vous pouvez explorer les fonctionnalités plus avancées :
 
-- [Architecture détaillée](/docs/architecture/overview)
-- [API Reference](/docs/api/introduction)
-- [Exemples d'utilisation](/docs/guides/examples)
-- [Déploiement en production](/docs/guides/deployment)
+-   [Architecture détaillée](/docs/architecture/overview)
+-   [API Reference](/docs/api/introduction)
+-   [Exemples d'utilisation](/docs/guides/examples)
 
 N'hésitez pas à consulter la documentation complète pour découvrir toutes les capacités de NeuralAgent™.
 
 ---
 
-*Ce guide a été rédigé par Yann Coudrah, architecte principal de NeuralAgent™, et mis à jour le 10 juin 2024.*
+_Ce guide a été rédigé par Yann Coudrah, architecte principal de NeuralAgent™, et mis à jour le 10 juin 2024._

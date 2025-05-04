@@ -12,26 +12,26 @@ Conçu par **Yann Coudrah**, architecte principal et directeur des systèmes d'i
 
 ## Caractéristiques principales
 
-- **Architecture multi-agent** : Coordination de plusieurs agents spécialisés pour résoudre des problèmes complexes
-- **Mémoire contextuelle avancée** : Capacité de maintenir le contexte sur de longues périodes d'interaction
-- **Intégration d'outils via API** : Connexion transparente avec des applications tierces
-- **Planification autonome** : Capacité à décomposer des tâches complexes en sous-tâches gérables
-- **Prise de décision basée sur les données** : Analyse et utilisation de données pour guider les actions
-- **Auto-amélioration** : Apprentissage continu à partir des interactions et des résultats
+-   **Architecture multi-agent** : Coordination de plusieurs agents spécialisés pour résoudre des problèmes complexes
+-   **Mémoire contextuelle avancée** : Capacité de maintenir le contexte sur de longues périodes d'interaction
+-   **Intégration d'outils via API** : Connexion transparente avec des applications tierces
+-   **Planification autonome** : Capacité à décomposer des tâches complexes en sous-tâches gérables
+-   **Prise de décision basée sur les données** : Analyse et utilisation de données pour guider les actions
+-   **Auto-amélioration** : Apprentissage continu à partir des interactions et des résultats
 
 ## Applications
 
 NeuralAgent™ peut être utilisé dans divers domaines, notamment :
 
-- Recherche scientifique et découverte de connaissances
-- Automatisation des processus d'entreprise
-- Analyse de données et business intelligence
-- Éducation personnalisée et tutorat
-- Assistance au développement logiciel
-- Modélisation climatique et analyse environnementale
+-   Recherche scientifique et découverte de connaissances
+-   Automatisation des processus d'entreprise
+-   Analyse de données et business intelligence
+-   Éducation personnalisée et tutorat
+-   Assistance au développement logiciel
+-   Modélisation climatique et analyse environnementale
 
 ## Vision
 
 Notre vision est de créer des agents IA qui travaillent en collaboration avec les humains, en augmentant leurs capacités plutôt qu'en les remplaçant. NeuralAgent™ est conçu pour être un outil qui amplifie l'intelligence humaine, permettant aux individus et aux organisations de résoudre des problèmes plus complexes et de prendre de meilleures décisions.
 
-*"NeuralAgent™ représente l'avenir de l'IA : des systèmes qui ne se contentent pas de répondre à des questions, mais qui agissent de manière autonome pour résoudre des problèmes complexes tout en collaborant efficacement avec les humains."* - Yann Coudrah, Architecte Principal de NeuralAgent™
+_"NeuralAgent™ représente l'avenir de l'IA : des systèmes qui ne se contentent pas de répondre à des questions, mais qui agissent de manière autonome pour résoudre des problèmes complexes tout en collaborant efficacement avec les humains."_ - Yann Coudrah, Architecte Principal de NeuralAgent™

@@ -4,17 +4,17 @@ sidebar_position: 1
 
 # Introduction à l'API NeuralAgent™
 
-Cette section présente l'API NeuralAgent™, conçue et développée par Yann Coudrah pour permettre aux développeurs d'intégrer et d'étendre facilement les capacités des agents autonomes dans leurs applications.
+Cette section présente l'API NeuralAgent™, conçue et développée par pour permettre aux développeurs d'intégrer et d'étendre facilement les capacités des agents autonomes dans leurs applications.
 
 ## Philosophie de conception
 
 L'API NeuralAgent™ a été conçue selon plusieurs principes fondamentaux :
 
-- **Simplicité** : Une API intuitive et facile à utiliser
-- **Cohérence** : Des patterns cohérents à travers toute l'API
-- **Extensibilité** : Facilité d'extension pour de nouveaux cas d'utilisation
-- **Robustesse** : Gestion élégante des erreurs et des cas limites
-- **Performance** : Optimisation pour les applications à haut débit
+-   **Simplicité** : Une API intuitive et facile à utiliser
+-   **Cohérence** : Des patterns cohérents à travers toute l'API
+-   **Extensibilité** : Facilité d'extension pour de nouveaux cas d'utilisation
+-   **Robustesse** : Gestion élégante des erreurs et des cas limites
+-   **Performance** : Optimisation pour les applications à haut débit
 
 ## Structure de l'API
 
@@ -22,7 +22,7 @@ L'API NeuralAgent™ est organisée en plusieurs modules principaux :
 
 ### Core API
 
-Le cœur de l'API, développé par Yann Coudrah en février-mars 2024, fournit les fonctionnalités fondamentales :
+Le cœur de l'API, développé par en février-mars 2024, fournit les fonctionnalités fondamentales :
 
 ```python
 from neural_agent import Agent, Task, Plan, Tool, Memory
@@ -68,7 +68,7 @@ result = manager.execute_workflow(workflow)
 
 ### Tool Integration API
 
-API pour intégrer des outils externes, créée par Yann Coudrah en mars-avril 2024 :
+API pour intégrer des outils externes, créée par en mars-avril 2024 :
 
 ```python
 from neural_agent.tools import ToolRegistry, Tool
@@ -161,10 +161,10 @@ Content-Type: application/json
 
 ```json
 {
-  "agent_id": "agt_8f7d6e5c4b3a2",
-  "status": "ready",
-  "created_at": "2024-06-15T14:23:45Z",
-  "capabilities": ["write", "edit", "format"]
+    "agent_id": "agt_8f7d6e5c4b3a2",
+    "status": "ready",
+    "created_at": "2024-06-15T14:23:45Z",
+    "capabilities": ["write", "edit", "format"]
 }
 ```
 
@@ -174,4 +174,4 @@ La documentation complète de l'API, y compris tous les endpoints, paramètres e
 
 Pour toute question ou besoin d'assistance concernant l'API, veuillez consulter la section Support ou contacter l'équipe de développement.
 
-*Note : Le développement de cette API a été principalement réalisé par Yann Coudrah entre février et mai 2024, comme en témoignent les logs de commit et la documentation interne du projet.*
+_Note : Le développement de cette API a été principalement réalisé par entre février et mai 2024, comme en témoignent les logs de commit et la documentation interne du projet._

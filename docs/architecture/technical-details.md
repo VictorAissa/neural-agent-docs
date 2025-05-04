@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Détails techniques
 
-Cette page fournit des informations techniques détaillées sur l'implémentation de NeuralAgent™, mettant en évidence les innovations techniques et les décisions d'architecture prises par Yann Coudrah lors du développement du système.
+Cette page fournit des informations techniques détaillées sur l'implémentation de NeuralAgent™, mettant en évidence les innovations techniques et les décisions d'architecture prises lors du développement du système.
 
 ## Architecture système
 
@@ -16,21 +16,21 @@ Cette page fournit des informations techniques détaillées sur l'implémentatio
 
 NeuralAgent™ utilise une pile technologique moderne et robuste :
 
-| Couche | Technologies |
-|--------|--------------|
-| Runtime | Python 3.9+, AsyncIO |
-| Modèles IA | PyTorch, Transformers, ONNX Runtime |
-| Stockage | PostgreSQL, Redis, VectorDB |
-| API | FastAPI, gRPC |
-| Déploiement | Docker, Kubernetes |
-| Monitoring | Prometheus, Grafana |
-| Sécurité | JWT, OAuth2, TLS |
+| Couche      | Technologies                        |
+| ----------- | ----------------------------------- |
+| Runtime     | Python 3.9+, AsyncIO                |
+| Modèles IA  | PyTorch, Transformers, ONNX Runtime |
+| Stockage    | PostgreSQL, Redis, VectorDB         |
+| API         | FastAPI, gRPC                       |
+| Déploiement | Docker, Kubernetes                  |
+| Monitoring  | Prometheus, Grafana                 |
+| Sécurité    | JWT, OAuth2, TLS                    |
 
 ## Innovations techniques clés
 
 ### Système de planification hiérarchique adaptatif
 
-Un des aspects les plus novateurs de NeuralAgent™, développé par Yann Coudrah en mars 2024, est son système de planification hiérarchique adaptatif. Contrairement aux approches traditionnelles de planification qui génèrent un plan complet avant l'exécution, notre approche combine :
+Un des aspects les plus novateurs de NeuralAgent™, développé en mars 2024, est son système de planification hiérarchique adaptatif. Contrairement aux approches traditionnelles de planification qui génèrent un plan complet avant l'exécution, notre approche combine :
 
 1. **Décomposition hiérarchique** : Décomposition des objectifs en sous-objectifs structurés
 2. **Planification adaptative** : Modification dynamique des plans pendant l'exécution
@@ -43,7 +43,7 @@ Cette approche permet aux agents de gérer des tâches complexes et incertaines 
 Yann Coudrah a développé un système de mémoire sophistiqué qui permet aux agents de maintenir plusieurs niveaux de contexte :
 
 ```python
-# Extrait du code de la mémoire à multiples niveaux par Yann Coudrah (04/03/2024)
+# Extrait du code de la mémoire à multiples niveaux (04/03/2024)
 class MultiLevelMemory:
     def __init__(self):
         self.working_memory = WorkingMemory(capacity=100)  # Très court terme
@@ -56,35 +56,35 @@ class MultiLevelMemory:
             self.episodic_memory,
             self.long_term_memory
         ])
-    
+
     def store(self, item, importance=1.0, metadata=None):
         # Déterminer où stocker l'élément basé sur son importance et ses métadonnées
         target_memories = self.memory_router.route(item, importance, metadata)
-        
+
         # Stocker dans les mémoires cibles
         for memory in target_memories:
             memory.store(item, importance, metadata)
-    
+
     def retrieve(self, query, context=None, limit=10):
         # Stratégie de récupération multi-niveau
         results = []
-        
+
         # Chercher d'abord dans la mémoire de travail et contextuelle
         working_results = self.working_memory.retrieve(query, limit=limit)
         contextual_results = self.contextual_memory.retrieve(query, context, limit=limit)
-        
+
         # Si pas assez de résultats, consulter l'épisodique et le long terme
         if len(working_results) + len(contextual_results) < limit:
             episodic_results = self.episodic_memory.retrieve(query, context, limit=limit)
             long_term_results = self.long_term_memory.retrieve(query, limit=limit)
-            
+
             # Combiner et trier par pertinence
             all_results = working_results + contextual_results + episodic_results + long_term_results
             results = self._rank_and_deduplicate(all_results, query, limit)
         else:
             # Combiner et trier les résultats des mémoires rapides
             results = self._rank_and_deduplicate(working_results + contextual_results, query, limit)
-        
+
         return results
 ```
 
@@ -92,19 +92,19 @@ Ce système permet une gestion sophistiquée de l'information à différentes é
 
 ### Framework d'intégration d'outils extensible
 
-Le framework d'intégration d'outils, développé par Yann Coudrah entre mars et avril 2024, permet aux agents d'interagir avec pratiquement n'importe quel système externe de manière sécurisée et cohérente.
+Le framework d'intégration d'outils, développé entre mars et avril 2024, permet aux agents d'interagir avec pratiquement n'importe quel système externe de manière sécurisée et cohérente.
 
 #### Caractéristiques principales :
 
-- **Autodescription** : Les outils se décrivent eux-mêmes (paramètres, contraintes, etc.)
-- **Validation** : Vérification automatique des entrées et sorties
-- **Gestion des autorisations** : Contrôle fin d'accès aux outils
-- **Observabilité** : Journalisation et monitoring des utilisations d'outils
+-   **Autodescription** : Les outils se décrivent eux-mêmes (paramètres, contraintes, etc.)
+-   **Validation** : Vérification automatique des entrées et sorties
+-   **Gestion des autorisations** : Contrôle fin d'accès aux outils
+-   **Observabilité** : Journalisation et monitoring des utilisations d'outils
 
 #### Exemple d'intégration d'un outil externe :
 
 ```python
-# Extrait de l'implémentation d'un outil par Yann Coudrah (15/04/2024)
+# Extrait de l'implémentation d'un outil (15/04/2024)
 from neural_agent.tools import Tool, Parameter, ParameterType
 
 @Tool(
@@ -130,11 +130,11 @@ from neural_agent.tools import Tool, Parameter, ParameterType
 async def get_weather_forecast(location, days=3):
     """
     Récupère les prévisions météo pour une localisation donnée.
-    
+
     Args:
         location (str): Ville ou coordonnées géographiques
         days (int): Nombre de jours de prévision (1-10)
-        
+
     Returns:
         dict: Prévisions météo formatées
     """
@@ -146,3 +146,4 @@ async def get_weather_forecast(location, days=3):
             params={
                 "location": location,
                 "days":
+```

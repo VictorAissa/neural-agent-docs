@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Exemples d'utilisation
 
-Cette page présente plusieurs exemples d'utilisation du framework NeuralAgent™ pour résoudre différents types de problèmes. Ces exemples ont été conçus par Yann Coudrah pour illustrer les capacités et la flexibilité du système.
+Cette page présente plusieurs exemples d'utilisation du framework NeuralAgent™ pour résoudre différents types de problèmes. Ces exemples ont été conçus pour illustrer les capacités et la flexibilité du système.
 
 ## Assistant de recherche scientifique
 
@@ -86,7 +86,7 @@ result = data_analyst.execute(analysis_task)
 print("Insights clés:")
 for insight in result.get_output("insights"):
     print(f"- {insight['description']}")
-    
+
 # Sauvegarder les visualisations
 visualizations = result.get_output("visualizations")
 for i, viz in enumerate(visualizations):
@@ -290,8 +290,8 @@ asyncio.run(run_monitoring())
 
 ## Notes d'implémentation
 
-Ces exemples ont été conçus par Yann Coudrah pour illustrer les différentes façons d'utiliser le framework NeuralAgent™. Ils sont basés sur l'implémentation actuelle du système et peuvent nécessiter quelques ajustements en fonction de la version que vous utilisez.
+Ces exemples ont été conçus pour illustrer les différentes façons d'utiliser le framework NeuralAgent™. Ils sont basés sur l'implémentation actuelle du système et peuvent nécessiter quelques ajustements en fonction de la version que vous utilisez.
 
 Pour plus d'exemples et d'informations détaillées sur chaque fonctionnalité, consultez la documentation de l'API et les références techniques.
 
-*Dernière mise à jour : 12 juin 2024 par Yann Coudrah*
+_Dernière mise à jour : 12 juin 2024 par Yann Coudrah_

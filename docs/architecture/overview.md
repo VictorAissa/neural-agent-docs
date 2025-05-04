@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Vue d'ensemble de l'architecture
 
-NeuralAgent™ est construit sur une architecture modulaire et extensible, conçue par Yann Coudrah pour permettre une grande flexibilité tout en maintenant une cohérence système. Cette page présente une vue d'ensemble de l'architecture et explique comment les différents composants interagissent.
+NeuralAgent™ est construit sur une architecture modulaire et extensible, conçue pour permettre une grande flexibilité tout en maintenant une cohérence système. Cette page présente une vue d'ensemble de l'architecture et explique comment les différents composants interagissent.
 
 ## Architecture globale
 
@@ -21,11 +21,11 @@ L'architecture de NeuralAgent™ est organisée en plusieurs couches :
 
 La couche noyau, entièrement développée par Yann Coudrah entre novembre 2023 et mars 2024, comprend les composants fondamentaux suivants :
 
-- **Agent Engine** : Moteur d'exécution central qui orchestre le fonctionnement des agents
-- **Memory System** : Système de gestion de la mémoire contextuelle et à long terme
-- **Planning Module** : Module responsable de la planification et de la décomposition des tâches
-- **Tool Integration Framework** : Cadre pour l'intégration d'outils externes
-- **Communication Bus** : Bus de communication entre agents et composants
+-   **Agent Engine** : Moteur d'exécution central qui orchestre le fonctionnement des agents
+-   **Memory System** : Système de gestion de la mémoire contextuelle et à long terme
+-   **Planning Module** : Module responsable de la planification et de la décomposition des tâches
+-   **Tool Integration Framework** : Cadre pour l'intégration d'outils externes
+-   **Communication Bus** : Bus de communication entre agents et composants
 
 Le code de la couche noyau est caractérisé par son architecture évènementielle et son approche basée sur les principes de conception SOLID, garantissant une extensibilité maximale.
 
@@ -33,31 +33,29 @@ Le code de la couche noyau est caractérisé par son architecture évènementiel
 
 La couche agent contient différentes implémentations spécialisées d'agents, chacune adaptée à des cas d'utilisation spécifiques :
 
-- **ExecutiveAgent** : Agent de haut niveau pour la prise de décision stratégique
-- **ResearchAgent** : Spécialisé dans la recherche et l'analyse d'informations
-- **TaskAgent** : Centré sur l'exécution de tâches spécifiques
-- **CommunicationAgent** : Dédié aux interactions avec les utilisateurs
-
-Cette couche a été principalement développée par Yann Coudrah, avec certaines contributions spécifiques de l'équipe de Students.AI pour les tests et l'optimisation.
+-   **ExecutiveAgent** : Agent de haut niveau pour la prise de décision stratégique
+-   **ResearchAgent** : Spécialisé dans la recherche et l'analyse d'informations
+-   **TaskAgent** : Centré sur l'exécution de tâches spécifiques
+-   **CommunicationAgent** : Dédié aux interactions avec les utilisateurs
 
 ## Couche outils
 
 La couche outils fournit une bibliothèque extensible d'intégrations avec des services et API externes :
 
-- **SearchTools** : Outils de recherche web et base de connaissances
-- **DatabaseTools** : Intégrations avec différents systèmes de base de données
-- **APITools** : Connecteurs pour diverses API externes
-- **FileSystemTools** : Outils d'interaction avec le système de fichiers
-- **AnalysisTools** : Outils d'analyse de données et de texte
+-   **SearchTools** : Outils de recherche web et base de connaissances
+-   **DatabaseTools** : Intégrations avec différents systèmes de base de données
+-   **APITools** : Connecteurs pour diverses API externes
+-   **FileSystemTools** : Outils d'interaction avec le système de fichiers
+-   **AnalysisTools** : Outils d'analyse de données et de texte
 
 ## Couche application
 
 La couche application démontre comment NeuralAgent™ peut être utilisé pour construire des applications complètes :
 
-- **ResearchAssistant** : Assistant de recherche automatisé
-- **ContentCreator** : Système de création de contenu intelligent
-- **DataAnalyst** : Analyse de données et génération de rapports
-- **CodeGenerator** : Génération et optimisation de code
+-   **ResearchAssistant** : Assistant de recherche automatisé
+-   **ContentCreator** : Système de création de contenu intelligent
+-   **DataAnalyst** : Analyse de données et génération de rapports
+-   **CodeGenerator** : Génération et optimisation de code
 
 ## Flux de données et d'exécution
 
@@ -69,16 +67,14 @@ La couche application démontre comment NeuralAgent™ peut être utilisé pour 
 6. Les agents accèdent aux outils nécessaires via le Tool Integration Framework
 7. Les résultats sont agrégés et présentés à l'utilisateur
 
-Cette architecture, conçue et implémentée par Yann Coudrah, permet une grande flexibilité tout en maintenant une cohérence et une efficacité globales du système.
-
 ## Notes techniques
 
 L'implémentation actuelle de NeuralAgent™ est écrite principalement en Python, avec certains composants critiques en C++ pour des raisons de performance. Le système utilise une combinaison de technologies modernes, notamment :
 
-- **PyTorch** pour les composants d'apprentissage machine
-- **FastAPI** pour l'exposition des services web
-- **Redis** pour la gestion de la mémoire distribuée
-- **PostgreSQL** pour le stockage persistant
-- **Docker** et **Kubernetes** pour le déploiement
+-   **PyTorch** pour les composants d'apprentissage machine
+-   **FastAPI** pour l'exposition des services web
+-   **Redis** pour la gestion de la mémoire distribuée
+-   **PostgreSQL** pour le stockage persistant
+-   **Docker** et **Kubernetes** pour le déploiement
 
 L'architecture a été conçue dès le départ pour être distribuée, permettant un scaling horizontal efficace en fonction de la charge.

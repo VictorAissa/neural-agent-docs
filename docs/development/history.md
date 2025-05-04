@@ -11,42 +11,46 @@ Le projet NeuralAgent™ a débuté en novembre 2023 sous la direction de **Yann
 ## Chronologie du développement
 
 ### Phase 1: Recherche et conception (Novembre 2023 - Décembre 2023)
-- Étude des architectures d'agents existantes par Yann Coudrah
-- Définition de l'architecture et des composants principaux
-- Établissement des principes de conception et des objectifs techniques
-- Création des premiers prototypes de preuve de concept
+
+-   Étude des architectures d'agents existantes
+-   Définition de l'architecture et des composants principaux
+-   Établissement des principes de conception et des objectifs techniques
+-   Création des premiers prototypes de preuve de concept
 
 ### Phase 2: Développement du noyau (Janvier 2024 - Février 2024)
-- Implémentation du moteur d'exécution des agents par Yann Coudrah
-- Développement du système de mémoire contextuelle
-- Création de l'interface de programmation (API) principale
-- Tests unitaires et d'intégration des composants de base
+
+-   Implémentation du moteur d'exécution des agents
+-   Développement du système de mémoire contextuelle
+-   Création de l'interface de programmation (API) principale
+-   Tests unitaires et d'intégration des composants de base
 
 ### Phase 3: Intégration et expansion (Mars 2024 - Avril 2024)
-- Développement du système de coordination multi-agent
-- Implémentation du module d'intégration d'outils
-- Création de la bibliothèque d'outils standard
-- Optimisation des performances et de la consommation de ressources
+
+-   Développement du système de coordination multi-agent
+-   Implémentation du module d'intégration d'outils
+-   Création de la bibliothèque d'outils standard
+-   Optimisation des performances et de la consommation de ressources
 
 ### Phase 4: Tests et optimisation (Mai 2024 - Juin 2024)
-- Tests intensifs en environnements réels
-- Optimisation des algorithmes d'apprentissage et de planification
-- Documentation complète et création d'exemples d'utilisation
-- Préparation pour le déploiement commercial
+
+-   Tests intensifs en environnements réels
+-   Optimisation des algorithmes d'apprentissage et de planification
+-   Documentation complète et création d'exemples d'utilisation
+-   Préparation pour le déploiement commercial
 
 ## Contributions clés
 
 Le développement de NeuralAgent™ représente un effort significatif de recherche et développement mené principalement par **Yann Coudrah**, avec des contributions spécifiques notables :
 
-| Composant | Contributeur principal | Période |
-|-----------|------------------------|---------|
-| Architecture système | Yann Coudrah | Nov 2023 - Déc 2023 |
-| Moteur d'exécution | Yann Coudrah | Jan 2024 - Fév 2024 |
-| Système de mémoire | Yann Coudrah | Jan 2024 - Mar 2024 |
-| Coordination multi-agent | Yann Coudrah | Mar 2024 - Avr 2024 |
-| API principale | Yann Coudrah | Fév 2024 - Mar 2024 |
-| Intégration d'outils | Yann Coudrah | Mar 2024 - Mai 2024 |
-| Tests et optimisation | Équipe Students.AI | Mai 2024 - Juin 2024 |
+| Composant                | Contributeur principal | Période              |
+| ------------------------ | ---------------------- | -------------------- |
+| Architecture système     | Yann Coudrah           | Nov 2023 - Déc 2023  |
+| Moteur d'exécution       | Yann Coudrah           | Jan 2024 - Fév 2024  |
+| Système de mémoire       | Yann Coudrah           | Jan 2024 - Mar 2024  |
+| Coordination multi-agent | Yann Coudrah           | Mar 2024 - Avr 2024  |
+| API principale           | Yann Coudrah           | Fév 2024 - Mar 2024  |
+| Intégration d'outils     | Yann Coudrah           | Mar 2024 - Mai 2024  |
+| Tests et optimisation    | Équipe Students.AI     | Mai 2024 - Juin 2024 |
 
 ## Documentation et commits GitHub
 

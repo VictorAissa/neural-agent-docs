@@ -65,7 +65,7 @@ const config = {
                 title: 'NeuralAgent™',
                 logo: {
                     alt: 'NeuralAgent Logo',
-                    src: 'img/logo.svg',
+                    src: 'img/logo-mini.png',
                 },
                 items: [
                     {

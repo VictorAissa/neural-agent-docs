@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Guide de démarrage
 
-Ce guide vous aidera à démarrer avec NeuralAgent™, le framework d'agents autonomes développé par Yann Coudrah. Nous vous guiderons à travers l'installation, la configuration de base et la création de votre premier agent.
+Ce guide vous aidera à démarrer avec NeuralAgent™, le framework d'agents autonomes. Nous vous guiderons à travers l'installation, la configuration de base et la création de votre premier agent.
 
 ## Prérequis
 

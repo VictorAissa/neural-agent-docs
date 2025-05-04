@@ -2,46 +2,36 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Introduction à NeuralAgent™
 
-Let's discover **Docusaurus in less than 5 minutes**.
+NeuralAgent™ est un framework d'agents autonomes qui combine l'intelligence artificielle générative avancée avec des capacités d'action autonome. Contrairement aux modèles de langage traditionnels qui se contentent de générer du contenu, NeuralAgent™ peut effectuer des tâches complexes de manière autonome dans des environnements virtuels et physiques via des API.
 
-## Getting Started
+## À propos de NeuralAgent™
 
-Get started by **creating a new site**.
+Conçu par **Yann Coudrah**, architecte principal et directeur des systèmes d'information de Students.AI, NeuralAgent™ représente une avancée significative dans le domaine des agents IA autonomes. Le projet a débuté en novembre 2023 comme une initiative de recherche interne et a rapidement évolué vers une plateforme complète pour la création, la gestion et le déploiement d'agents IA autonomes.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## Caractéristiques principales
 
-### What you'll need
+- **Architecture multi-agent** : Coordination de plusieurs agents spécialisés pour résoudre des problèmes complexes
+- **Mémoire contextuelle avancée** : Capacité de maintenir le contexte sur de longues périodes d'interaction
+- **Intégration d'outils via API** : Connexion transparente avec des applications tierces
+- **Planification autonome** : Capacité à décomposer des tâches complexes en sous-tâches gérables
+- **Prise de décision basée sur les données** : Analyse et utilisation de données pour guider les actions
+- **Auto-amélioration** : Apprentissage continu à partir des interactions et des résultats
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+## Applications
 
-## Generate a new site
+NeuralAgent™ peut être utilisé dans divers domaines, notamment :
 
-Generate a new Docusaurus site using the **classic template**.
+- Recherche scientifique et découverte de connaissances
+- Automatisation des processus d'entreprise
+- Analyse de données et business intelligence
+- Éducation personnalisée et tutorat
+- Assistance au développement logiciel
+- Modélisation climatique et analyse environnementale
 
-The classic template will automatically be added to your project after you run the command:
+## Vision
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+Notre vision est de créer des agents IA qui travaillent en collaboration avec les humains, en augmentant leurs capacités plutôt qu'en les remplaçant. NeuralAgent™ est conçu pour être un outil qui amplifie l'intelligence humaine, permettant aux individus et aux organisations de résoudre des problèmes plus complexes et de prendre de meilleures décisions.
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+*"NeuralAgent™ représente l'avenir de l'IA : des systèmes qui ne se contentent pas de répondre à des questions, mais qui agissent de manière autonome pour résoudre des problèmes complexes tout en collaborant efficacement avec les humains."* - Yann Coudrah, Architecte Principal de NeuralAgent™
